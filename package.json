@@ -1,0 +1,29 @@
+{
+  "name": "webnotifrss",
+  "version": "1.0.0",
+  "description": "Web Notification with RSS",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron --enable-transparent-visuals --disable-gpu ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbaguszulmi/webnotifrss.git"
+  },
+  "keywords": [
+    "webnotifrss"
+  ],
+  "author": "mbaguszulmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbaguszulmi/webnotifrss/issues"
+  },
+  "homepage": "https://github.com/mbaguszulmi/webnotifrss#readme",
+  "dependencies": {
+    "open": "^7.0.0"
+  },
+  "devDependencies": {
+    "electron": "^6.0.12"
+  }
+}

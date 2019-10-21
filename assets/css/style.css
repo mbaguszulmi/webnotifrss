@@ -1,0 +1,193 @@
+@import url(../fonts/montserrat/Montserrat.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body div.main-app {
+  margin: 20px;
+  min-height: calc(100vh - 41px);
+  background-color: #fbfbfb;
+  color: #1f1f1f;
+  border: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+body div.main-app a.corner-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #223e52;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 0 10px;
+  color: #fff;
+}
+
+body div.main-app h1.web-name {
+  font-weight: 500;
+  padding: 0 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body div.main-app time.last-update {
+  font-size: 0.9em;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+body div.main-app div.content-wrapper {
+  height: calc(100vh - 160px);
+  overflow: hidden;
+}
+
+body div.main-app div.content-wrapper .loading {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.main-app div.content-wrapper .loading .loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid gainsboro;
+  border-top: 5px solid #223e52;
+  border-bottom: 5px solid #223e52;
+  border-radius: 50%;
+  -webkit-animation: 1s linear 0s spin;
+          animation: 1s linear 0s spin;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body div.main-app div.content-wrapper div.item-list {
+  padding: 0 20px;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body div.main-app div.content-wrapper div.item-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+body div.main-app div.content-wrapper div.item-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body div.main-app div.content-wrapper div.item-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link .item {
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link .item .tuhmbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: center/cover url(../images/noimage.png);
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link .item h3.title {
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link .item time.pub-date {
+  font-size: .8em;
+  color: #333333;
+  padding: 0 20px 20px;
+}
+
+body div.main-app div.content-wrapper div.item-list a.item-link .item p.description {
+  padding: 0 20px 20px;
+}
+
+.custom-form div.input-area > * {
+  display: block;
+}
+
+.custom-form div.input-area.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-form div.input-area.inline > *:first-child {
+  margin-right: auto;
+}
+/*# sourceMappingURL=style.css.map */

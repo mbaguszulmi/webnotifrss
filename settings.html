@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebFeed Config</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="./assets/fonts/fontawesome/js/all.min.js"></script>
+</head>
+<body>
+    <div class="main-app">
+        <a href="index.html" class="corner-button"><i class="fas fa-fw fa-times"></i></a>
+
+        <h1 class="web-name">Settings</h1>
+
+        <section class="settings">
+            <form action="" method="post" class="custom-form">
+                <div class="input-area">
+                    <label for="feed-url">Feed Url</label>
+                    <input type="url" name="feed-url" id="feed-url" placeholder="http://website.domain/feed" required>
+                </div>
+
+                <div class="input-area">
+                    <label for="refresh-time">Refresh Time (minutes)</label>
+                    <input type="number" name="refresh-time" id="refresh-time" min="20" max="120" value="60" required>
+                </div>
+
+                <div class="input-area inline">
+                    <label for="auto-start">Auto start when startup</label>
+                    <input type="checkbox" name="auto-start" id="auto-start">
+                </div>
+
+                <div class="input-area inline">
+                    <label for="notification">Send notification</label>
+                    <input type="checkbox" name="notification" id="notification">
+                </div>
+
+                <div class="input-area">
+                    <button type="submit" class="btn main">
+                        <i class="fas fa-fw fa-save"></i>
+                        Save
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

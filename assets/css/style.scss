@@ -1,0 +1,161 @@
+@import url(../fonts/montserrat/Montserrat.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    user-select: none;
+
+    div.main-app {
+        margin: 20px;
+        min-height: calc(100vh - 41px);
+        background-color: #fbfbfb;
+        color: #1f1f1f;
+        border: hidden;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+        max-width: 320px;
+        position: relative;
+        overflow: hidden;
+
+        a.corner-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #223e52;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 0 10px;
+            color: #fff;
+        }
+
+        h1.web-name {
+            font-weight: 500;
+            padding: 0 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        time.last-update {
+            font-size: 0.9em;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        div.content-wrapper {
+            height: calc(100vh - 160px);
+            overflow: hidden;
+
+            .loading {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .loading-spinner {
+                    width: 50px;
+                    height: 50px;
+                    border: 5px solid gainsboro;
+                    border-top: 5px solid #223e52;
+                    border-bottom: 5px solid #223e52;
+                    border-radius: 50%;
+                    animation: 1s linear 0s spin;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes spin {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            div.item-list {
+                padding: 0 20px;
+                height: calc(100vh - 160px);
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+    
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+    
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgba(0,0,0,0.4);
+                    border-radius: 3px;
+                }
+                // display: none;
+
+                a.item-link {
+                    text-decoration: none;
+                    color: #1f1f1f;
+    
+                    .item {
+                        background-color: #fff;
+                        margin: 20px 0;
+                        border-radius: 12px;
+                        box-shadow: 0px 4px 11px rgba(0,0,0,0.1);
+                        position: relative;
+                        overflow: hidden;
+    
+                        .tuhmbnail {
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            background: center / cover url(../images/noimage.png);
+                        }
+    
+                        h3.title {
+                            font-weight: 500;
+                            padding: 0 20px;
+                        }
+        
+                        time.pub-date {
+                            font-size: .8em;
+                            color: #333333;
+                            padding: 0 20px 20px;
+                        }
+    
+                        p.description {
+                            padding: 0 20px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-form {
+    div.input-area {
+        & > * {
+            display: block;
+        }
+
+        &.inline {
+            display: flex;
+            align-items: center;
+
+            & > *:first-child {
+                margin-right: auto;
+            }
+        }
+    }
+}
