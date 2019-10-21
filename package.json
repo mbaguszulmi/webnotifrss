@@ -15,7 +15,7 @@
     "webnotifrss"
   ],
   "author": "mbaguszulmi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mbaguszulmi/webnotifrss/issues"
   },
